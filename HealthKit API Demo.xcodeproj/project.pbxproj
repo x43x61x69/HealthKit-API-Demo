@@ -13,6 +13,7 @@
 		42ADBFF71FEC9F22004076A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ADBFF61FEC9F22004076A7 /* Assets.xcassets */; };
 		42ADBFFA1FEC9F22004076A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ADBFF81FEC9F22004076A7 /* LaunchScreen.storyboard */; };
 		42ADBFFD1FEC9F22004076A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ADBFFC1FEC9F22004076A7 /* main.m */; };
+		42ADC0051FEC9F30004076A7 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ADC0041FEC9F30004076A7 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		42ADBFF91FEC9F22004076A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42ADBFFB1FEC9F22004076A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42ADBFFC1FEC9F22004076A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42ADC0041FEC9F30004076A7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		42ADC0061FEC9F31004076A7 /* HealthKit API Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthKit API Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42ADC0051FEC9F30004076A7 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 			children = (
 				42ADBFEC1FEC9F22004076A7 /* HealthKit API Demo */,
 				42ADBFEB1FEC9F21004076A7 /* Products */,
+				42ADC0031FEC9F30004076A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +63,26 @@
 		42ADBFEC1FEC9F22004076A7 /* HealthKit API Demo */ = {
 			isa = PBXGroup;
 			children = (
+				42ADC0061FEC9F31004076A7 /* HealthKit API Demo.entitlements */,
 				42ADBFED1FEC9F22004076A7 /* AppDelegate.h */,
 				42ADBFEE1FEC9F22004076A7 /* AppDelegate.m */,
 				42ADBFF01FEC9F22004076A7 /* ViewController.h */,
 				42ADBFF11FEC9F22004076A7 /* ViewController.m */,
 				42ADBFF31FEC9F22004076A7 /* Main.storyboard */,
-				42ADBFF61FEC9F22004076A7 /* Assets.xcassets */,
 				42ADBFF81FEC9F22004076A7 /* LaunchScreen.storyboard */,
+				42ADBFF61FEC9F22004076A7 /* Assets.xcassets */,
 				42ADBFFB1FEC9F22004076A7 /* Info.plist */,
 				42ADBFFC1FEC9F22004076A7 /* main.m */,
 			);
 			path = "HealthKit API Demo";
+			sourceTree = "<group>";
+		};
+		42ADC0031FEC9F30004076A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42ADC0041FEC9F30004076A7 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +117,11 @@
 					42ADBFE91FEC9F21004076A7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -278,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HealthKit API Demo/HealthKit API Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928652TY3Y;
 				INFOPLIST_FILE = "HealthKit API Demo/Info.plist";
@@ -292,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "HealthKit API Demo/HealthKit API Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 928652TY3Y;
 				INFOPLIST_FILE = "HealthKit API Demo/Info.plist";
