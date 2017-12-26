@@ -29,6 +29,7 @@
 		42ADBFFC1FEC9F22004076A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42ADC0041FEC9F30004076A7 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		42ADC0061FEC9F31004076A7 /* HealthKit API Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthKit API Demo.entitlements"; sourceTree = "<group>"; };
+		42F4B0141FF1DF180015BC5F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		42ADBFE11FEC9F21004076A7 = {
 			isa = PBXGroup;
 			children = (
+				42F4B0141FF1DF180015BC5F /* README.md */,
 				42ADBFEC1FEC9F22004076A7 /* HealthKit API Demo */,
 				42ADBFEB1FEC9F21004076A7 /* Products */,
 				42ADC0031FEC9F30004076A7 /* Frameworks */,
@@ -63,16 +65,16 @@
 		42ADBFEC1FEC9F22004076A7 /* HealthKit API Demo */ = {
 			isa = PBXGroup;
 			children = (
-				42ADC0061FEC9F31004076A7 /* HealthKit API Demo.entitlements */,
 				42ADBFED1FEC9F22004076A7 /* AppDelegate.h */,
 				42ADBFEE1FEC9F22004076A7 /* AppDelegate.m */,
 				42ADBFF01FEC9F22004076A7 /* ViewController.h */,
 				42ADBFF11FEC9F22004076A7 /* ViewController.m */,
+				42ADBFF61FEC9F22004076A7 /* Assets.xcassets */,
 				42ADBFF31FEC9F22004076A7 /* Main.storyboard */,
 				42ADBFF81FEC9F22004076A7 /* LaunchScreen.storyboard */,
-				42ADBFF61FEC9F22004076A7 /* Assets.xcassets */,
-				42ADBFFB1FEC9F22004076A7 /* Info.plist */,
 				42ADBFFC1FEC9F22004076A7 /* main.m */,
+				42ADBFFB1FEC9F22004076A7 /* Info.plist */,
+				42ADC0061FEC9F31004076A7 /* HealthKit API Demo.entitlements */,
 			);
 			path = "HealthKit API Demo";
 			sourceTree = "<group>";
